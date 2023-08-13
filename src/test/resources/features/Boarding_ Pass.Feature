@@ -7,3 +7,4 @@ Feature: Boarding pass generation page
     And I switch to new window
     Then element having xpath "//span[text()='Start']" should be present
     Then User should get successful message
+    And I am writing this on sanity branch
