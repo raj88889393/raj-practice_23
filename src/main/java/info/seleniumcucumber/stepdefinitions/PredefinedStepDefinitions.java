@@ -19,7 +19,7 @@ import info.seleniumcucumber.methods.TestCaseFailed;
 public class PredefinedStepDefinitions implements BaseTest {
 	protected WebDriver driver = DriverUtil.getDefaultDriver();
 	//Navigation Steps
-	
+
 	//Step to navigate to specified URL
 	@Then("^I navigate to \"([^\"]*)\"$")
 	public void navigate_to(String link)
@@ -150,7 +150,14 @@ public class PredefinedStepDefinitions implements BaseTest {
 	{
 		navigationObj.zoomInOut("reset");
 	}
-	
+
+
+	@Then("User should get successful ")
+	public void userShouldGetSuccessfulMessage(String link)
+	{
+		navigationObj.navigateTo(link);
+	}
+
 	// scroll webpage
 	
 	@Then("^I scroll to (top|end) of page$")
