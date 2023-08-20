@@ -8,3 +8,11 @@ Feature: Boarding pass generation page
     Then element having xpath "//span[text()='Start']" should be present
     Then User should get successful message
     And I am writing this on sanity branch
+
+    #Rajendra
+  Scenario Outline: verify heading of web check in flow
+    Then user should see the message "Web check-in successful" for successful web check in
+
+
+    git add added boarding pass feature file
+    and writing this after added
