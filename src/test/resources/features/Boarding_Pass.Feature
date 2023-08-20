@@ -9,6 +9,9 @@ Feature: Boarding pass generation page
     Then User should get successful message
     And I am writing this on sanity branch
 
+
+    Rajendra branch = will use git push origin rajendra
+    
     #Rajendra
   Scenario Outline: verify heading of web check in flow
     Then user should see the message "Web check-in successful" for successful web check in
@@ -16,3 +19,4 @@ Feature: Boarding pass generation page
 
     git add added boarding pass feature file
     and writing this after added
+
